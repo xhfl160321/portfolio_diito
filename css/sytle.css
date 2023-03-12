@@ -1,0 +1,399 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::before, .clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+a, p {
+  text-decoration: none;
+  color: #260101;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+/* font */
+font{
+  font-family: 'Climate Crisis', cursive; /*젤 두껍*/
+  font-family: 'Tilt Warp', cursive; /*약간 두껍*/
+  font-family: 'Noto Sans KR', sans-serif; /*article 사이즈*/
+}
+
+/* wrap */
+#wrap {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#page1Wrap{
+  width: 100%;
+  height: 1000px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+  width: 1250px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.title a{
+  font-family: 'Climate Crisis', cursive;
+  font-size: 25px;
+}
+
+hr{
+  width: 100%;
+  height: 1.5px;
+  color: #260101;
+  border-right: 0;
+  border-left: 0;
+}
+
+.nav{
+  width: 1250px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  /*background: green;*/
+}
+.navLeft{
+  width: 600px;
+  height: 100%;
+  float: left;
+  /*background: lime;*/
+}
+.navLeftTitle, .navRightTitle{
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  /*background: pink;*/
+}
+.navLeftTitle p, .navRightTitle p{
+  font-family: 'Climate Crisis', cursive;
+  font-size: 10px;
+  
+}
+.navLeft ul, .navRight ul{
+  float: left;
+  width: 400px;
+  padding-left: 30px;
+}
+.navLeft ul li, .navRight ul li{
+  float: left;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navLeft ul li p, .navRight ul li p{
+  font-size: 10px;
+  font-family: 'Tilt Warp', cursive;
+  letter-spacing: 1.5px;
+  color: inherit;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.navLeft ul li a{
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 0.5px #260101;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💜</text></svg>"), auto;
+}
+.navLeft ul li:first-child a{
+  background-color: #3d80d9;
+}
+.navLeft ul li:nth-child(2) a{
+  background-color: #F24405;
+}
+.navLeft ul li:nth-child(3) a{
+  background-color: #F29F05;
+}
+.navLeft ul li:last-child a{
+  background-color: #038c3e;
+}
+
+/*navRight*/
+.navRight{
+  float: right;
+  width: 580px;
+  height: 100%;
+  /*background: green;*/
+}
+.navRight ul{
+  width: 450px;
+  float: right;
+  padding-left: 0;
+}
+.navRight ul li{
+  width: 33.33%;
+}
+.navRight ul li a{
+  margin-top: 10px;
+  font-family: 'Tilt Warp', cursive;
+  font-size: 13px;
+}
+
+
+/* table custom */
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #260101;
+  width: 1250px;
+  height: 650px;
+/*   table-layout: fixed; */
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top;
+}
+
+/*thead*/
+thead{
+  width: 100%;
+  height: 150px;
+}
+.tr1_th1{
+  width: 380px;
+  height: 150px;
+  text-align: center;
+}
+.tr1_th1 img{
+  width: 90px;
+  height: 80px;
+  margin-top: 35px;
+}
+.tr1_th2{
+  width: 870px;
+  height: 75px;
+}
+.tr1_th2 p{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 40px;
+}
+.tr2_th1, .tr2_th2, .tr2_th3{
+  width: 290px;
+  height: 75px;
+}
+.tr2_th_con{
+  width: 85%;
+  height: 80%;
+/*   background: pink; */
+  text-align: left;
+  margin-left: 7.5%;
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tr2_th_con p:first-child{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 18px;
+}
+.tr2_th_con p:last-child{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* tbody */
+tbody{
+  width: 100%;
+  height: 500px;
+}
+.tr3_td1{
+  width: 80px;
+  height: 100%;
+  background: #260101;
+}
+.tr3_td1 .tr3_td_con{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.tr3_td1 .tr3_td_con p{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 18px;
+  color: #f2f2f2;
+  padding-left: 25px;
+  letter-spacing: 1px;
+}
+.tr3_td2, .tr3_td3, .tr3_td4, .tr3_td5{
+  width: 290px;
+  height: 270px;
+}
+.tr3_td_con2{
+  width: 85%;
+  height: 80%;
+  margin-left: 7.5%;
+  margin-top: 8.5%;
+  text-align: left;
+  background: #f2f2f2;
+}
+.tr3_td_con2 p:first-child{
+  font-family: 'Tilt Warp', cursive;
+  font-size: 30px;
+  line-height: 40px;
+}
+.tr3_td_con2 p:last-child{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13.5px;
+  opacity: 0.8;
+  margin-top: 8px;
+  line-height: 25px;
+}
+.tr3_td3 .tr3_td_con2{
+  overflow: hidden;
+  width: 100%;
+  height: 150%;
+  margin: 0;
+  position: relative;
+}
+.tr3_td3 .tr3_td_con2 img{
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  display: block;
+  margin-top: -15%;
+}
+.tr3_td5{
+  background: #FF301F;
+/*   background: #EB0101; */
+}
+.tr3_td5 .tr3_td_con2 p{
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.tr3_td5 .tr3_td_con2 p:last-child{
+  text-decoration: underline;
+  margin-top: -5%;
+  margin-left: 50%;
+}
+
+.tr4_td1{
+  width: 880px;
+  height: 230px;
+  overflow: hidden;
+}
+.tr4_td_con{
+  width: 95%;
+  height: 95%;
+/*   background: pink; */
+  margin-left: 2.5%;
+  margin-top: 0.5%;
+  overflow: hidden;
+  text-align: center;
+}
+.tr4_td_con p:first-child{
+  font-family: 'Climate Crisis', cursive;
+  font-size: 120px;
+  display: block;
+  text-shadow: 8px -8px 0px #3D80D9, 14px -12px 0px #85AFE6;
+  background: #f2f2f2;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎧</text></svg>"), pointer;
+/*   position: absolute; */
+}
+.tr4_td_con p:last-child{
+  width: 827px;
+  height: 80px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp:4;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.tr4_td2{
+  width: 290px;
+  height: 230px;
+}
+
+/* lyrics */
+#lyrics{
+  display: none;
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  top: 60%; left: 50%;
+  transform: translate(-50%,-50%);
+  background: #f2f2f2;
+  border: 2px solid #260101;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎶</text></svg>"), auto;
+}
+#lyrics h3{
+  margin-top: 50px;
+  font-family: 'Tilt Warp', cursive;
+  font-size: 23px;
+  width: 500px;
+  height: 60px;
+}
+#lyrics p{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* stickers */
+#sticker{
+  position: absolute;
+  top: 40%; left: 34%;
+}
+#sticker img{
+  width: 100px;
+  height: 100px;
+  transform: rotate(-15deg);
+}
